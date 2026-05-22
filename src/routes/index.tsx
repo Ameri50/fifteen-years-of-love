@@ -11,14 +11,7 @@ export default function Index() {
   const letterRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // eslint-disable-next-line prettier/prettier
-    const colors = [
-      "#f9c5d1",
-      "#ffd6e0",
-      "#f4b8c4",
-      "#e8c07a",
-      "#ffffff",
-    ];
+    const colors = ["#f9c5d1", "#ffd6e0", "#f4b8c4", "#e8c07a", "#ffffff"];
 
     const fire = (opts: confetti.Options) =>
       confetti({
