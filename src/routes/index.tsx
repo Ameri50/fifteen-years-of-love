@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef } from "react";
 import confetti from "canvas-confetti";
 
@@ -8,11 +7,7 @@ import Gallery from "@/components/Gallery";
 import Footer from "@/components/Footer";
 import FloatingHearts from "@/components/FloatingHearts";
 
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
-function Index() {
+export default function Index() {
   const letterRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
