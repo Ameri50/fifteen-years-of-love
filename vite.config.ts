@@ -9,6 +9,4 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // eslint-disable-next-line prettier/prettier
-// eslint-disable-next-line prettier/prettier
 });
