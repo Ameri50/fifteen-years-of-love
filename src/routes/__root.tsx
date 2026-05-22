@@ -73,7 +73,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Feliz 15 Años — Para mi hermana 💖" },
-      { name: "description", content: "Una carta interactiva, emotiva y cinematográfica para celebrar los 15 años de la mejor hermana del mundo." },
+      {
+        name: "description",
+        content:
+          "Una carta interactiva, emotiva y cinematográfica para celebrar los 15 años de la mejor hermana del mundo.",
+      },
       { property: "og:title", content: "Feliz 15 Años — Para mi hermana 💖" },
       { property: "og:description", content: "Una carta interactiva y emotiva para sus 15 años." },
       { property: "og:type", content: "website" },
@@ -83,6 +87,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      // eslint-disable-next-line prettier/prettier
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Dancing+Script:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" },
       {
         rel: "stylesheet",
